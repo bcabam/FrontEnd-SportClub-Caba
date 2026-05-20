@@ -1,0 +1,180 @@
+:root {
+    --primary-color: #0052cc;
+    --primary-hover: #0043a8;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-main: #2d3748;
+    --text-muted: #718096;
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+header, main, section, footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-color); /* Cambiado de rojo a azul moderno */
+    letter-spacing: -0.5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+    margin-left: 1.5rem;
+    transition: var(--transition);
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+main {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1a202c;
+}
+
+main p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+/* BOTÓN MODERNO */
+button, .btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 82, 204, 0.2);
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px); /* Efecto de levante */
+    box-shadow: 0 10px 15px -3px rgba(0, 82, 204, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+section {
+    padding-bottom: 4rem;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+section h3 {
+    background-color: var(--card-bg);
+    margin-top: 1.5rem;
+    padding: 2rem 2rem 0 2rem;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    color: #1a202c;
+    font-size: 1.3rem;
+}
+
+section h3 + p {
+    background-color: var(--card-bg);
+    padding: 0 2rem 1rem 2rem;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+section h3 + p + p {
+    background-color: var(--card-bg);
+    padding: 0 2rem 2rem 2rem;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #1a202c;
+    color: #edf2f7;
+    max-width: 100%;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    color: #a0aec0;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #cbd5e0;
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+    color: var(--text-main);
+    transition: var(--transition);
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.15);
+}
