@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body {
+    background-color: #2D0052;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.login-logo-img {
+    max-width: 180px;
+    height: auto;
+    display: block;
+}
+
+.login-card {
+    background-color: #ffffff;
+    border: 3px solid #FCD12A;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    color: #333333;
+}
+
+.login-card h1 {
+    text-align: center;
+    color: #2D0052;
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #2D0052;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #FCD12A;
+    box-shadow: 0 0 5px rgba(252, 209, 42, 0.5);
+}
+
+.btn-ingresar {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: #2D0052;
+    color: #FFFFFF;
+    border: 3px solid #FCD12A;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.btn-ingresar:hover {
+    background-color: #400075;
+    transform: translateY(-2px);
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 25px 0 15px 0;
+}
+
+.login-links {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.login-links a {
+    color: #2D0052;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.login-links a:hover {
+    color: #FCD12A;
+    text-decoration: underline;
+}
+
+.separator {
+    margin: 0 10px;
+    color: #aaa;
+}
