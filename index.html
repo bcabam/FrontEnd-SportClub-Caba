@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportClub</title>
-    <link href="./css/style_index.css" rel="stylesheet">
+    <title>SportClub - Entrena con Nosotros</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather+Sans:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="index-body">
 
-    <header>
-        <h1 class="ColorRojo">SportClub</h1>
+<header>
+        <a href="#" class="logo-link">
+            <img src="assets/logo_empresa_letra_v1.png" alt="SportClub Logo" class="index-logo-img">
+        </a>
         <nav>
             <a href="#">Inicio</a>
             <a href="#">Planes</a>
@@ -21,31 +28,38 @@
     <main>
         <h2>Entrena con nosotros</h2>
         <p>Bienvenid@ a SportClub, un espacio pensado para mejorar tu salud, entrenar con profesionales y participar en diferentes clases deportivas.</p>
-        <button type="button">Conocer planes...</button>
+        <button type="button" class="cta-btn">Conocer planes...</button>
     </main>
 
-    <section>
+    <section class="features-section">
         <h2>Planes disponibles</h2>
 
-        <h3>PLAN BÁSICO</h3>
-        <p>Acceso a clases grupales 2 veces por semana.</p>
-        <p>Precio: $15.000</p>
+        <div class="features">
+            <div class="feature-card">
+                <h3>PLAN BÁSICO</h3>
+                <p>Acceso a clases grupales 2 veces por semana.</p>
+                <p class="price-tag">Precio: $15.000</p>
+            </div>
 
-        <h3>PLAN PREMIUM</h3>
-        <p>Acceso ilimitado a clases y uso de instalaciones.</p>
-        <p>Precio: $30.000</p>
+            <div class="feature-card">
+                <h3>PLAN PREMIUM</h3>
+                <p>Acceso ilimitado a clases y uso de instalaciones.</p>
+                <p class="price-tag">Precio: $30.000</p>
+            </div>
 
-        <h3>PLAN FAMILIAR</h3>
-        <p>Plan para grupos familiares con beneficios especiales.</p>
-        <p>Precio: $50.000</p>
+            <div class="feature-card">
+                <h3>PLAN FAMILIAR</h3>
+                <p>Plan para grupos familiares con beneficios especiales.</p>
+                <p class="price-tag">Precio: $50.000</p>
+            </div>
+        </div>
     </section>
 
     <footer>
         <h2>Contacto</h2>
         <p>Correo: contacto@sportclub.cl</p>
         <p>Teléfono: +56 9 1234 5678</p>
-        <p>Dirección: Av. Principal 123, Santiago</p>
-    </footer>
+        <p>Dirección: Av. Principal 123, Coquimbo</p> </footer>
 
 </body>
 </html>
